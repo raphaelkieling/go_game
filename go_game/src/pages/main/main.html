@@ -1,0 +1,24 @@
+<!--
+  Generated template for the MainPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+ 
+
+<ion-content>
+  <button  class="button-nav-right" (click)="Logout()" ion-button>
+      <ion-icon name="power"></ion-icon>
+  </button>
+  <!-- Foto -->
+  <ion-card (tap)="AbrirModalDeEnvioDePedido()">  
+    <ion-card-content>
+      <img src="../../assets/images/batman.jpg" alt="">
+    </ion-card-content>
+  </ion-card>
+  <!-- Fim Foto -->
+  <!-- Nome do time -->
+  <p class="nome_team">Operadores da Morte</p>
+  <!-- Codigo  -->
+  <p class="codigo_team" (press)="CopiarCodigoDoTime()">Dz_O3@2</p>
+</ion-content>
